@@ -1,0 +1,55 @@
+<nav ui-nav>
+  <ul class="nav">
+    <li class="nav-header m-v-sm hidden-folded">
+<h3>Mean Menu</h3>
+    </li>
+    
+    <li ui-sref-active="active">
+      <a md-ink-ripple ui-sref='app.dashboard'>
+        <i class="pull-right up"></i>
+        <i class="icon mdi-action-settings-input-svideo i-20"></i>
+        <span class="font-normal">Admin</span>
+      </a>
+
+    </li>
+    <li>
+      <a md-ink-ripple ui-sref="app.analysis">
+        <i class="pull-right up"></i>
+        <i class="icon mdi-navigation-apps i-20"></i>
+        <span class="font-normal" >Advertisers</span>
+      </a>
+    
+    </li>
+    <li ng-class="{active:$state.includes('ui.component')}">
+      <a md-ink-ripple>
+        <i class="icon mdi-action-subject i-20"></i>
+        <span class="font-normal">Users</span>
+      </a>
+      
+    </li>
+    <li ng-class="{active:$state.includes('ui.material')}">
+      <a md-ink-ripple>
+        <i class="pull-right up"></i>
+        <i class="icon mdi-image-flash-on i-20"></i>
+        <span class="font-normal">Rewards</span>
+      </a>
+     
+    </li>
+    <li ng-class="{active:$state.includes('ui.form')}">
+      <a md-ink-ripple>
+        <i class="icon mdi-toggle-radio-button-on i-20"></i>
+        <span class="font-normal">Finances</span>
+      </a>
+     
+    </li>
+    <li ng-class="{active:$state.includes('ui.table')}">
+      <a md-ink-ripple>
+        <i class="icon mdi-editor-format-list-bulleted i-20"></i>
+        <span class="font-normal">Settings</span>
+      </a>
+    
+    </li>
+
+    
+  </ul>
+</nav>
